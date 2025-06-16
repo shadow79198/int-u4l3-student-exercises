@@ -18,6 +18,11 @@ englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
 
     // 2. Write an if-else conditional statement.
+    if (englishInput === "Mon"){
+        document.querySelector(".english-message").innerHTML = "Correct"
+    } else {
+        document.querySelector(".english-message").innerHTML = "Womp womp try again"
+    }
     //  - Check if the value of the variable englishInput is correct.
     //  - The answer should be "Mon".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
@@ -35,6 +40,12 @@ mathButton.addEventListener("click", function() {
     // NOTE: we treat numbers slightly different than strings.
     //  - We need to write 'Number' before the grabbed value. 
     let mathInput = Number(document.querySelector(".math").value);
+
+    if (mathInput === 30){
+        document.querySelector(".math-message").innerHTML = "Correct"
+    } else {
+        document.querySelector(".math-message").innerHTML = "Womp womp try again"
+    }
 
     // 3. Write an if-else conditional statement.
     //  - Check if the value of the variable mathInput is correct.
@@ -55,6 +66,12 @@ ssButton.addEventListener("click", function() {
     //  - If the user enters the correct answer, use .innerHTML to display the word "You got it!" in the ".ss-message" div. 
     //  - If incorrect, display "Womp, womp. Try again."
 
+    if (ssInput === "Albany"){
+        document.querySelector(".ss-message").innerHTML = "Correct"
+    } else {
+        document.querySelector(".ss-message").innerHTML = "Womp womp try again"
+    }
+
 
 
 });
@@ -70,6 +87,14 @@ scienceButton.addEventListener("click", function() {
     //  - The answer should be "solid".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Rockstar!" in the ".science-message" div. 
     //  - If incorrect, display "Sad. Try again."
+    let scienceInput = document.querySelector(".science").value;
+
+    if (scienceInput === "Solid"){
+        document.querySelector(".science-message").innerHTML = "Correct"
+    } else {
+        document.querySelector(".science-message").innerHTML = "Womp womp try again"
+    }
+
 
 
 
